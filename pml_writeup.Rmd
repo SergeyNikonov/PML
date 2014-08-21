@@ -2,8 +2,9 @@
 title: "Practical Machine Learning Course Project Writeup"
 output:
   html_document:
-    theme: readable
     keep_md: yes
+    self_contained: no
+    theme: readable
 ---
 
 *by Sergey Nikonov*
