@@ -1,71 +1,281 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Pml by SergeyNikonov</title>
+<!DOCTYPE html>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Pml</h1>
-        <p></p>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        <p class="view"><a href="https://github.com/SergeyNikonov/PML">View the Project on GitHub <small>SergeyNikonov/PML</small></a></p>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="pandoc" />
 
 
-        <ul>
-          <li><a href="https://github.com/SergeyNikonov/PML/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/SergeyNikonov/PML/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/SergeyNikonov/PML">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<title>Practical Machine Learning Course Project Writeup</title>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<script src="pml_writeup_files/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="pml_writeup_files/bootstrap-2.3.2/css/readable.min.css" rel="stylesheet" />
+<link href="pml_writeup_files/bootstrap-2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<script src="pml_writeup_files/bootstrap-2.3.2/js/bootstrap.min.js"></script>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="pml_writeup_files/highlight/default.css"
+      type="text/css" />
+<script src="pml_writeup_files/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+</head>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<body>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="container-fluid main-container">
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<div id="header">
+<h1 class="title">Practical Machine Learning Course Project Writeup</h1>
+</div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/SergeyNikonov">SergeyNikonov</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+<p><em>by Sergey Nikonov</em></p>
+<p>We have huge dataset from quantified self movement devices and want to predict manner in which persons did the exercise.</p>
+<p>Let’s load the data and take a look at it.</p>
+<pre class="r"><code>data &lt;- read.csv(file=&quot;pml-training.csv&quot;, stringsAsFactors=F, sep=&quot;,&quot;)
+dim(data)</code></pre>
+<pre><code>## [1] 19622   160</code></pre>
+<pre class="r"><code>table(is.na(data))</code></pre>
+<pre><code>## 
+##   FALSE    TRUE 
+## 1852048 1287472</code></pre>
+<p>Many variables, many NAs. Let’s take out variables with NAs, near zero variance and not needed for prediction (perhaps).</p>
+<pre class="r"><code>library(caret)</code></pre>
+<pre><code>## Loading required package: lattice
+## Loading required package: ggplot2</code></pre>
+<pre class="r"><code>data &lt;- data[-nearZeroVar(data)]
+nas &lt;- sapply(data[,1:100], function(x) table(is.na(x))[1])
+data &lt;- data[, nas==19622]
+data &lt;- data[, c(-1,-3:-7)]</code></pre>
+<p>And what about correlation?</p>
+<pre class="r"><code>table(symnum(cor(data[,c(-1, -53)])))</code></pre>
+<pre><code>## 
+##              *    ,    .    +    1    B 
+## 1275 1059    5   35  166    7   51    3</code></pre>
+<pre class="r"><code>attr(symnum(cor(data[, c(-1, -53)])), &quot;legend&quot;)</code></pre>
+<pre><code>## [1] &quot;0 &#39; &#39; 0.3 &#39;.&#39; 0.6 &#39;,&#39; 0.8 &#39;+&#39; 0.9 &#39;*&#39; 0.95 &#39;B&#39; 1&quot;</code></pre>
+<p>Some preprocessing will be good.</p>
+<pre class="r"><code>pre &lt;- preProcess(data[c(-1, -53)], method=&quot;pca&quot;, thresh=0.95)
+predata &lt;- predict(pre, data[ c(-1, -53)])</code></pre>
+<p>Now we can take a look into preprocessed data. 25 variables are better than 160.</p>
+<pre class="r"><code>qplot(predata[,1], predata[,2], color=data[,53])</code></pre>
+<p><img src="pml_writeup_files/figure-html/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5" /></p>
+<p>We have 5 exellent clusters, but they look like a mess. It is person’s clusters, may be.</p>
+<pre class="r"><code>qplot(predata[,1], predata[,2], color=data[,1])</code></pre>
+<p><img src="pml_writeup_files/figure-html/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6" /></p>
+<p>OK then. At least we can differentiate persons.</p>
+<p>Seems like we can not divide “classe” in 2 dimensions, so let’s algorithm do it for us.</p>
+<pre class="r"><code>pairs(predata[,16:20], col=as.factor(data[,53]), pch=&quot;.&quot;)</code></pre>
+<p><img src="pml_writeup_files/figure-html/unnamed-chunk-7.png" alt="plot of chunk unnamed-chunk-7" /></p>
+<p>I had two choices: a) use something strong as boosting or random forest o b) find something simple and accurate enough. After digging in caret models I found k-nearest neighbors. Let’s try.</p>
+<pre class="r"><code>library(caret)
+
+data[,53] &lt;- as.factor(data[,53])
+tr &lt;-  trainControl( method=&quot;cv&quot;, number=3, p=0.3)
+tune &lt;- data.frame(k=1:3)
+fit &lt;- train(y=data[,53], x=predata, tuneGrid=tune, trControl=tr, 
+             method=&quot;knn&quot; )
+fit</code></pre>
+<pre><code>## k-Nearest Neighbors 
+## 
+## 19622 samples
+##    25 predictor
+##     5 classes: &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39; 
+## 
+## No pre-processing
+## Resampling: Cross-Validated (3 fold) 
+## 
+## Summary of sample sizes: 13081, 13082, 13081 
+## 
+## Resampling results across tuning parameters:
+## 
+##   k  Accuracy  Kappa  Accuracy SD  Kappa SD
+##   1  1         1      5e-04        6e-04   
+##   2  1         1      1e-03        1e-03   
+##   3  1         1      2e-03        2e-03   
+## 
+## Accuracy was used to select the optimal model using  the largest value.
+## The final value used for the model was k = 1.</code></pre>
+<pre class="r"><code>plot(varImp(fit), scales=list(cex=0.5))</code></pre>
+<pre><code>## Loading required package: pROC
+## Type &#39;citation(&quot;pROC&quot;)&#39; for a citation.
+## 
+## Attaching package: &#39;pROC&#39;
+## 
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     cov, smooth, var</code></pre>
+<p><img src="pml_writeup_files/figure-html/unnamed-chunk-8.png" alt="plot of chunk unnamed-chunk-8" /></p>
+<p>Hm. Exellent accuracy and Kappa. May be overfitting? Whatever. Create a prediction and compare to another.</p>
+<pre class="r"><code>test &lt;- read.csv(file=&quot;pml-testing.csv&quot;, stringsAsFactors=F, sep=&quot;,&quot;)
+test &lt;- test[,names(test) %in% names(data)]
+pretest &lt;- predict(pre, test[,-1])
+preKnn &lt;- predict(fit, pretest)</code></pre>
+<p>If it is a prediction, here must be a random forest. Just to make sure.</p>
+<pre class="r"><code>library(doParallel)</code></pre>
+<pre><code>## Loading required package: foreach
+## Loading required package: iterators
+## Loading required package: parallel</code></pre>
+<pre class="r"><code>tr &lt;-  trainControl(method=&quot;cv&quot;, number=3,  p=0.3)
+
+cl &lt;- makePSOCKcluster(2)
+clusterEvalQ(cl, library(foreach))</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;foreach&quot;   &quot;methods&quot;   &quot;stats&quot;     &quot;graphics&quot;  &quot;grDevices&quot; &quot;utils&quot;    
+## [7] &quot;datasets&quot;  &quot;base&quot;     
+## 
+## [[2]]
+## [1] &quot;foreach&quot;   &quot;methods&quot;   &quot;stats&quot;     &quot;graphics&quot;  &quot;grDevices&quot; &quot;utils&quot;    
+## [7] &quot;datasets&quot;  &quot;base&quot;</code></pre>
+<pre class="r"><code>registerDoParallel(cl)
+fitRF &lt;- train(y=data[,53], x=predata, trControl=tr,  method=&quot;parRF&quot;)</code></pre>
+<pre><code>## Loading required package: randomForest
+## randomForest 4.6-10
+## Type rfNews() to see new features/changes/bug fixes.</code></pre>
+<pre class="r"><code>fitRF</code></pre>
+<pre><code>## Parallel Random Forest 
+## 
+## 19622 samples
+##    25 predictor
+##     5 classes: &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39; 
+## 
+## No pre-processing
+## Resampling: Cross-Validated (3 fold) 
+## 
+## Summary of sample sizes: 13081, 13080, 13083 
+## 
+## Resampling results across tuning parameters:
+## 
+##   mtry  Accuracy  Kappa  Accuracy SD  Kappa SD
+##    2    1         1.0    0.003        0.004   
+##   13    1         1.0    0.003        0.004   
+##   25    1         0.9    0.003        0.004   
+## 
+## Accuracy was used to select the optimal model using  the largest value.
+## The final value used for the model was mtry = 2.</code></pre>
+<pre class="r"><code>plot(varImp(fitRF), scales=list(cex=0.7))</code></pre>
+<p><img src="pml_writeup_files/figure-html/unnamed-chunk-10.png" alt="plot of chunk unnamed-chunk-10" /></p>
+<pre class="r"><code>preRF &lt;- predict(fitRF, pretest)</code></pre>
+<p>Notice size of fit (7.9 Mb) and fitRF (64.5 Mb).</p>
+<p>And the moment of truth.</p>
+<pre class="r"><code>confusionMatrix(predict(fit, predata), data$classe) </code></pre>
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    A    B    C    D    E
+##          A 5580    0    0    0    0
+##          B    0 3797    0    0    0
+##          C    0    0 3422    0    0
+##          D    0    0    0 3216    0
+##          E    0    0    0    0 3607
+## 
+## Overall Statistics
+##                                 
+##                Accuracy : 1     
+##                  95% CI : (1, 1)
+##     No Information Rate : 0.284 
+##     P-Value [Acc &gt; NIR] : &lt;2e-16
+##                                 
+##                   Kappa : 1     
+##  Mcnemar&#39;s Test P-Value : NA    
+## 
+## Statistics by Class:
+## 
+##                      Class: A Class: B Class: C Class: D Class: E
+## Sensitivity             1.000    1.000    1.000    1.000    1.000
+## Specificity             1.000    1.000    1.000    1.000    1.000
+## Pos Pred Value          1.000    1.000    1.000    1.000    1.000
+## Neg Pred Value          1.000    1.000    1.000    1.000    1.000
+## Prevalence              0.284    0.194    0.174    0.164    0.184
+## Detection Rate          0.284    0.194    0.174    0.164    0.184
+## Detection Prevalence    0.284    0.194    0.174    0.164    0.184
+## Balanced Accuracy       1.000    1.000    1.000    1.000    1.000</code></pre>
+<pre class="r"><code>confusionMatrix(predict(fitRF, predata), data$classe) </code></pre>
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    A    B    C    D    E
+##          A 5580    0    0    0    0
+##          B    0 3797    0    0    0
+##          C    0    0 3422    0    0
+##          D    0    0    0 3216    0
+##          E    0    0    0    0 3607
+## 
+## Overall Statistics
+##                                 
+##                Accuracy : 1     
+##                  95% CI : (1, 1)
+##     No Information Rate : 0.284 
+##     P-Value [Acc &gt; NIR] : &lt;2e-16
+##                                 
+##                   Kappa : 1     
+##  Mcnemar&#39;s Test P-Value : NA    
+## 
+## Statistics by Class:
+## 
+##                      Class: A Class: B Class: C Class: D Class: E
+## Sensitivity             1.000    1.000    1.000    1.000    1.000
+## Specificity             1.000    1.000    1.000    1.000    1.000
+## Pos Pred Value          1.000    1.000    1.000    1.000    1.000
+## Neg Pred Value          1.000    1.000    1.000    1.000    1.000
+## Prevalence              0.284    0.194    0.174    0.164    0.184
+## Detection Rate          0.284    0.194    0.174    0.164    0.184
+## Detection Prevalence    0.284    0.194    0.174    0.164    0.184
+## Balanced Accuracy       1.000    1.000    1.000    1.000    1.000</code></pre>
+<pre class="r"><code>all.equal(preRF, preKnn)</code></pre>
+<pre><code>## [1] &quot;1 string mismatch&quot;</code></pre>
+<p>OK. Submission next. And good luck for all of us.</p>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with --self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
 </html>
