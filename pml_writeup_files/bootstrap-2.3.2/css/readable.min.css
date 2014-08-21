@@ -1,23 +1,23 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 300;
-  src: url(fonts/Lato.woff) format('woff'), url(fonts/Lora.ttf) format('truetype');
+  src: url(fonts/Lora.woff) format('woff'), url(fonts/Lora.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 600;
-  src: url(fonts/LatoBold.woff) format('woff'), url(fonts/LoraBold.ttf) format('truetype');
+  src: url(fonts/LoraBold.woff) format('woff'), url(fonts/LoraBold.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Lora';
   font-style: italic;
   font-weight: 300;
   src: url(fonts/LoraItalic.woff) format('woff'), url(fonts/LoraItalic.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Lora';
   font-style: italic;
   font-weight: 600;
   src: url(fonts/LoraBoldItalic.woff) format('woff'), url(fonts/LoraBoldItalic.ttf) format('truetype');
