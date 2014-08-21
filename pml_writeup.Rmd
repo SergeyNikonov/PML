@@ -2,6 +2,7 @@
 title: "Practical Machine Learning Course Project Writeup"
 output:
   html_document:
+    theme: readable
     keep_md: yes
 ---
 
@@ -19,7 +20,7 @@ table(is.na(data))
 
 Many variables, many NAs. Let's take out variables with NAs, near zero variance and not needed for prediction (perhaps).
 
-```{r }
+```{r}
 library(caret)
 data <- data[-nearZeroVar(data)]
 nas <- sapply(data[,1:100], function(x) table(is.na(x))[1])
@@ -58,7 +59,7 @@ OK then. At least we can differentiate persons.
 
 Seems like we can not divide "classe" in 2 dimensions, so let's algorithm do it for us.
 ```{r}
-pairs(predata[,16:20], col=as.factor(data[,53]))
+pairs(predata[,16:20], col=as.factor(data[,53]), pch=".")
 ```
 
 I had two choices: a) use something strong as boosting or random forest o b) find something simple and accurate enough. After digging in caret models I found k-nearest neighbors. Let's try.
