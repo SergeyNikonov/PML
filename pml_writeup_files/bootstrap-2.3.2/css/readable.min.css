@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(fonts/Lora.woff) format('woff'), url(fonts/Lora.ttf) format('truetype');
+  src: url(fonts/Lato.woff) format('woff'), url(fonts/Lora.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
-  src: url(fonts/LoraBold.woff) format('woff'), url(fonts/LoraBold.ttf) format('truetype');
+  src: url(fonts/LatoBold.woff) format('woff'), url(fonts/LoraBold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Verdana';
